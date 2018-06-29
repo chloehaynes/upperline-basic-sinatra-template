@@ -1,1 +1,91 @@
-<h1> This is a view </h1>
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Jukebox</title>
+    
+  
+<head>
+	<style type="text/css">
+		body {
+			border-color: red;
+			transition: border-color 1s;
+		}
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+		var colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
+
+		var i = 1;
+
+		window.setInterval(function(){
+			document.body.style.borderColor = colors[i];
+			i++;
+			if (i === colors.length){
+				i=0;
+			}
+		}, 1000);
+	</script>
+</body>
+
+    
+  </head>
+  
+  <body style = "border: 20px solid;border-radius:60px;padding:30px;font-family:didot">
+    <div align = "center">
+      <h1 style = "font-size:100px;padding:0px">JUKEBOX</h1>
+      <h2 style = "padding:0px"><i>discover music that was released before you were born</i></h2>
+      <hr>
+    </div>
+    
+    <form method = "post">
+    <div>
+      <h2>Between what years were you born in?</h2>
+      <input type="radio" name="question_1" value="answer_1a" >1980 - present
+      <br>
+      <input type="radio" name="question_1" value="answer_1b">1940 - 1979
+      <br>
+      <input type="radio" name="question_1" value="answer_1c">1900 - 1939
+    </div>
+    <hr width = "200px" align = "left">
+    <div>
+      <h2>Which of these colors do you like most?</h2>
+      <input type="radio" name="question_2" value="answer_2a">red
+      <br>
+      <input type="radio" name="question_2" value="answer_2b">blue
+      <br>
+      <input type="radio" name="question_2" value="answer_2c">yellow
+    </div>
+    <hr width = "200px" align = "left">  
+    <div>
+      <h2>Which of these things would you want to do the most?</h2>
+      <input type="radio" name="question_3" value="answer_3a">watch a movie
+      <br>
+      <input type="radio" name="question_3" value="answer_3b">go to the park
+      <br>
+      <input type="radio" name="question_3" value="answer_3c">go to a museum
+    </div>
+    <hr width = "200px" align = "left">  
+    <div>
+      <h2>Which of these cities would you want to travel to most?</h2>
+      <input type="radio" name="question_4" value="answer_4a">London
+      <br>
+      <input type="radio" name="question_4" value="answer_4b">Milan
+      <br>
+      <input type="radio" name="question_4" value="answer_4c">New York
+    </div>
+    <hr width = "200px" align = "left">
+    <br>
+    <div><input type="submit" value="continue to your recommended music..." style="background-color:white;color:black;font-family:Didot;font-weight:bold;font-size:18px;text-decoration:none;border-style:solid;border-width:thin;border-radius:8px;padding:4px"></div>
+    <hr>
+    <br>
+    <br>
+    </div>
+    <br>
+    <br>
+    </form>
+      
+  </body
+  
+</html>

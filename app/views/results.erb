@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title><%= @band %></title>
+  
+    
+<head>
+	<style type="text/css">
+		body {
+			border-color: red;
+			transition: border-color 1s;
+		}
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+		var colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
+
+		var i = 1;
+
+		window.setInterval(function(){
+			document.body.style.borderColor = colors[i];
+			i++;
+			if (i === colors.length){
+				i=0;
+			}
+		}, 1000);
+	</script>
+</body>
+  
+  
+  </head>
+  
+  <body style = "border: 20px solid;border-radius:60px;padding:30px;font-family:didot">
+     <div align = "center">
+      <h1 style = "font-size:100px;padding:0px">JUKEBOX</h1>
+      <h2 style = "padding:0px"><i>discover music that was released before you were born</i></h2>
+      <hr>
+    </div>
+    
+    
+    <div>
+    <h2>You should listen to...</h2>
+    <h1><%= @band %></h1>
+    <img width = "500px" src = "<%= @picture %>">
+    <br>
+    <hr>
+    <br>
+    <h2>To read about <i><%= @band %></i>, click <a href="<%= @link %>">here</a>.</h2>
+    <br>
+    </div>
+    <div align = "center">
+      <hr width = "400px">
+      <h2>You might like these songs:</h2>
+      <table class="sounds"><tbody><tr class="rows">
+<td class="sounds" style="background-color:white;width:280px;text-align:center;vertical-align:top"><span style="color:black;"><h3><%= @song1 %></h3></span></td>
+<td class="sounds" style="background-color:white;width:280px;text-align:center;vertical-align:top"><span style="color:black;"><h3><%= @song2 %></h3></span></td>
+<td class="sounds" style="background-color:white;width:280px;text-align:center;vertical-align:top"><span style="color:black;"><h3><%= @song3 %></h3></span></td>
+</tr>
+<td class="sounds" style="background-color:white;width:280px;text-align:center;vertical-align:top"><span style="color:black;"><%= @year1 %></span></td>
+<td class="sounds" style="background-color:white;width:280px;text-align:center;vertical-align:top"><span style="color:black;"><%= @year2 %></span></td>
+<td class="sounds" style="background-color:white;width:280px;text-align:center;vertical-align:top"><span style="color:black;"><%= @year3 %></span></td>
+</tr>
+<tr><td class="sounds" style="background-color:white;width:280px;text-align:center"><span style="color:black;"><iframe src="<%= @video1 %>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></span></td>
+<td class="sounds" style="background-color:white;width:280px;text-align:center"><span style="color:black;"><iframe src="<%= @video2 %>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></span></td>
+<td class="sounds" style="background-color:white;width:280px;text-align:center"><span style="color:black;"><iframe src="<%= @video3 %>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></span></td>
+        </tr></tbody></table></div>
+  <br>
+  <hr>
+  
+  <div align = "center">
+  <h3>Click <a href = "">here</a> to take quiz again!</h3>
+  </div>
+  
+  </body>
+
+</html>
+      
